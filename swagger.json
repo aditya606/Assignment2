@@ -1,0 +1,90 @@
+{
+    "swagger": "2.0",
+    "info": {
+    "version": "1.0.0",
+    "description": "sample api login logout",
+    "title": "Crud operation"
+    },
+    "host": "localhost:4000",
+    "basePath": "/",
+    "schemes": [
+    "http"
+    ],
+    "paths": {
+    "/router/select": {
+    "get": {
+    "description": "shows a user in the database",
+   
+    "responses": {
+    "200": {
+    "description" : "successfully signed up."
+    }
+    }
+    }
+   
+    },
+    "/router/insert": {
+        "post": {
+            "description": "Api of insert",
+            "consumes": [
+                "application/json"
+            ],
+            "produces": [
+                "application/json"
+            ],
+            "parameters": [
+                {
+                    "in": "body",
+                    "name": "body",
+                    "description": "student object  the need to be update",
+                    "required": true
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "successfully Inserted."
+                }
+            }
+        }
+
+    },
+    "/router/delete/3": {
+        "delete": {
+            "description": "To delete by the id",
+            "responses": {
+                "200": {
+                    "description": "Successfully fetched the data"
+                }
+            }
+        }
+    },
+    "/router/update/15": {
+        "put": {
+            "description": "Api of Update",
+            "summary": "Update an existing employee",
+            "consumes": [
+                "application/json"
+            ],
+            "produces": [
+                "application/json"
+            ],
+            "parameters": [
+                {
+                    "in": "body",
+                    "name": "body",
+                    "description": "add student obhject  the need to be store in database",
+                    "required": true
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "successfully Inserted."
+                }
+            }
+        }
+    }
+}
+}
+
+
+
